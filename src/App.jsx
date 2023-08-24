@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import UsersClass from './UsersClass'
-import UsersFunction from './UsersFunction'
+import NavigationBar from './components/NavigationBar'
+import UsersClass from './components/UsersClass'
+import UsersFunction from './components/UsersFunction'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,9 +11,13 @@ function App() {
   return (
     <>
       {/* <UsersClass/> */}
+      <NavigationBar/>
       <UsersFunction/>
     </>
   )
 }
 
 export default App
+
+
+// https://api.nytimes.com/svc/movies/v2/reviews/search.json?query=godfather&api-key=evUQHLLMG2DdnAk5rQHsMCViqxR4nf1s
